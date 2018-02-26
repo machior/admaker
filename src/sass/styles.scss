@@ -1,0 +1,12 @@
+@import
+'variables',
+'mixins';
+
+body{
+  border: red dotted 2px;
+
+  app-root{
+    border: green double 2px;
+    display: block;
+  }
+}
