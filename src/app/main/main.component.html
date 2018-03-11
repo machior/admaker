@@ -1,0 +1,19 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<!-- A grey horizontal navbar that becomes vertical on small screens -->
+<nav class="navbar navbar-expand-sm">
+
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <!--<li *ngFor="let option of menuOptions" class="nav-link">{{option.name}}</li>-->
+    <li routerLinkActive="active" class="nav-link" routerLink="" [routerLinkActiveOptions]="{exact: true}">adMaker</li>
+    <li routerLinkActive="active" class="nav-link" routerLink="about-us">O nas</li>
+    <li routerLinkActive="active" class="nav-link" routerLink="contact">Portfolio</li>
+    <li routerLinkActive="active" class="nav-link" routerLink="portfolio">Kontakt</li>
+  </ul>
+
+</nav>
+
+<div class="page" [@routerAnimations]="prepareRouteTransition(outlet)">
+  <router-outlet #outlet="outlet"></router-outlet>
+</div>
+
