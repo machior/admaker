@@ -1,15 +1,14 @@
 import {Component, Inject, OnInit} from '@angular/core';
 import {AppService} from '../service/app.service';
 import {HttpErrorResponse} from '@angular/common/http';
-import {slideLeft, slideRight} from './routerAnimations';
+import {fadeInAnimation} from './routerAnimations';
 import {transition, trigger} from '@angular/animations';
 
 @Component({
   selector: 'app-main',
   animations: [
     trigger('routerAnimations', [
-      transition('* => *', slideRight),
-      // transition('contact => about-us', slideLeft),
+      transition('* => *', fadeInAnimation)
     ])
   ],
   templateUrl: './main.component.html',

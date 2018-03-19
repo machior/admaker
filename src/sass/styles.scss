@@ -1,12 +1,10 @@
 @import
 'variables',
 'mixins';
+//'~font-awesome/css/font';
 
-body{
-  border: red dotted 2px;
+body {
+  background-color: black;
+  color: white;
 
-  app-root{
-    border: green double 2px;
-    display: block;
-  }
 }

@@ -5,6 +5,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 // COMPONENTS
 import { AppComponent } from './app.component';
@@ -38,6 +39,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    AngularFontAwesomeModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [AppService],
